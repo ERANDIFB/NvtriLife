@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NvBoton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/nv_verde</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">26dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="NvBotonBorde" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/nv_verde</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/nv_verde</item>
+        <item name="cornerRadius">26dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="NvBarra">
+        <item name="android:background">@color/nv_verde</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="NvCampo" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/nv_verde</item>
+        <item name="hintTextColor">@color/nv_verde</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+</resources>

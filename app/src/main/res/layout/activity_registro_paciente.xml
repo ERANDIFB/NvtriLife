@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/barra" style="@style/NvBarra"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="←  Crear cuenta\nPACIENTE" />
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NvCampo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Nombre completo">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName|textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NvCampo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="Correo">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreo" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NvCampo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="Contraseña (mínimo 6 caracteres)"
+                app:endIconMode="password_toggle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NvCampo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="Fecha de nacimiento">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFecha" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:focusable="false"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NvCampo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="Teléfono">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTelefono" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegistrar" style="@style/NvBoton"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="Crear cuenta" />
+
+            <ProgressBar
+                android:id="@+id/progress" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvYaTienes"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="16dp"
+                android:padding="8dp" android:text="¿Ya tienes cuenta? Inicia sesión"
+                android:textColor="@color/nv_verde_texto" android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/barra" style="@style/NvBarra"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="←  Administrar solicitud" />
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp" app:strokeColor="@color/nv_verde_claro">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:id="@+id/tvNombre"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="20sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/tvCedula"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp" />
+                    <TextView android:id="@+id/tvTelefono"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:text="Documento oficial:" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnVerDocumento" style="@style/NvBotonBorde"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" android:text="Ver documento (PDF)" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAprobar" style="@style/NvBoton"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="Aprobar" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRechazar" style="@style/NvBotonBorde"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:text="Rechazar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

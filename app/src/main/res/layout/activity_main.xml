@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="vertical"
+        android:gravity="center" android:padding="32dp">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🌿" android:textSize="80sp" />
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:fontFamily="serif" android:text="NvtriLife"
+            android:textColor="@color/nv_verde" android:textSize="40sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Tu bienestar en un solo lugar"
+            android:textColor="@color/nv_verde_texto" android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="32dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIniciarSesion" style="@style/NvBoton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Iniciar sesión" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCrearCuenta" style="@style/NvBotonBorde"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Crear cuenta" />
+    </LinearLayout>
+</LinearLayout>

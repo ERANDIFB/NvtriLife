@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/barra" style="@style/NvBarra"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="←  Crear cuenta\nNUTRIÓLOGA" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="vertical"
+        android:gravity="center" android:padding="32dp">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:text="Gracias por querer unirte a nosotros"
+            android:textColor="@color/nv_verde_texto" android:textSize="28sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="🥗" android:textSize="80sp" />
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:gravity="center"
+            android:text="Estamos revisando tu perfil para confirmar que todo esté en orden"
+            android:textSize="16sp" android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:gravity="center"
+            android:text="Cuando seas aprobada podrás iniciar sesión."
+            android:textColor="@color/nv_verde_texto" android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVolver" style="@style/NvBoton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" android:text="Volver al inicio" />
+    </LinearLayout>
+</LinearLayout>
